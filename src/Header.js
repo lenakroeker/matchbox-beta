@@ -92,7 +92,7 @@ export const Header = () => {
                 User Guide
               </MobileNavitem>
 
-              <MobileNavitemLogin exact to="/signup">
+              <MobileNavitemLogin exact to="/sign-up">
                 Log In
               </MobileNavitemLogin>
 

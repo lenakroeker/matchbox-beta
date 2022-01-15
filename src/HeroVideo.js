@@ -9,14 +9,24 @@ export default function HeroVideo() {
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <Video width="640" height="auto" controls>
-          <source src={Vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </Video>
-        <VideoMobile width="100%" height="auto" controls>
-          <source src={Vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </VideoMobile>
+        <Video
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/uBBkPDIavjI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></Video>
+        <VideoMobile
+          width="100%"
+          height="auto"
+          src="https://www.youtube.com/embed/uBBkPDIavjI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></VideoMobile>
       </ScrollAnimation>
     </Div>
   );
@@ -40,14 +50,14 @@ const Img = styled.img`
   }
 `;
 
-const Video = styled.video`
+const Video = styled.iframe`
   display: block;
   margin: auto;
   @media (max-width: 500px) {
     display: none;
   }
 `;
-const VideoMobile = styled.video`
+const VideoMobile = styled.iframe`
   display: none;
   @media (max-width: 500px) {
     display: block;
