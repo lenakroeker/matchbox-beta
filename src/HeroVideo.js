@@ -1,28 +1,30 @@
 import React from "react";
 import styled from "styled-components";
 import Green from "./assets/newgreen.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import Vid from "./assets/matchbox-demo.mp4";
 export default function HeroVideo() {
   return (
     <Div>
-      <Img src={Green} />
-      <Video width="640" height="auto" controls>
-        <source src={Vid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </Video>
-      <VideoMobile width="100%" height="auto" controls>
-        <source src={Vid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </VideoMobile>
+      <ScrollAnimation animateIn="fadeIn">
+        <Img src={Green} />
+        <Video width="640" height="auto" controls>
+          <source src={Vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </Video>
+        <VideoMobile width="100%" height="auto" controls>
+          <source src={Vid} type="video/mp4" />
+          Your browser does not support the video tag.
+        </VideoMobile>
+      </ScrollAnimation>
     </Div>
   );
 }
 
 const Div = styled.div`
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
-  background: pink;
   @media (max-width: 500px) {
     margin: 40px auto;
   }
@@ -40,7 +42,7 @@ const Img = styled.img`
 
 const Video = styled.video`
   display: block;
-  margin: auto;
+  margin-left: calc(100% - 320px);
   @media (max-width: 500px) {
     display: none;
   }
