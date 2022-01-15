@@ -23,7 +23,7 @@ export default function HeroVideo() {
 }
 
 const Div = styled.div`
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
   @media (max-width: 500px) {
     margin: 40px auto;
