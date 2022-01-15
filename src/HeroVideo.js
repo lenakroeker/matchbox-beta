@@ -42,6 +42,7 @@ const Img = styled.img`
 
 const Video = styled.video`
   display: block;
+  margin: auto;
   @media (max-width: 500px) {
     display: none;
   }
