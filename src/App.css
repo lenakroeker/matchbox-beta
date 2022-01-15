@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +9,13 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
 }
 
 @media (prefers-reduced-motion: no-preference) {
