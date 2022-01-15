@@ -20,6 +20,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/matchbox-beta" exact element={<Home />} />
         <Route path="/about" exact element={<AboutUs />} />
         <Route path="/user-guide" exact element={<Guide />} />
         <Route path="/glossary" exact element={<Glossary />} />
