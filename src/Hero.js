@@ -23,7 +23,7 @@ export default function Hero() {
 
 const Wrapper = styled.div`
   margin-top: 70px;
-  background: white;
+  background: red;
   height: 480px;
   display: flex;
   width: 100%;
