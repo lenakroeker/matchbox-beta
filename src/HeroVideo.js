@@ -9,10 +9,12 @@ export default function HeroVideo() {
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <Video width="640" height="auto" controls>
-          <source src={Vid} type="video/mp4" />
-          Your browser does not support the video tag.
-        </Video>
+        <Flex>
+          <Video width="640" height="auto" controls>
+            <source src={Vid} type="video/mp4" />
+            Your browser does not support the video tag.
+          </Video>
+        </Flex>
         <VideoMobile width="100%" height="auto" controls>
           <source src={Vid} type="video/mp4" />
           Your browser does not support the video tag.
@@ -29,6 +31,15 @@ const Div = styled.div`
     margin: 40px auto;
   }
 `;
+
+const Flex = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  @media (max-width: 500px) {
+    display: none;
+  }
+`;
 const Img = styled.img`
   position: absolute;
   right: 0;
@@ -42,7 +53,7 @@ const Img = styled.img`
 
 const Video = styled.video`
   display: block;
-  margin-left: calc(100vw - 320px);
+  margin: auto;
   @media (max-width: 500px) {
     display: none;
   }
