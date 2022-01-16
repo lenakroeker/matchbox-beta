@@ -8,7 +8,13 @@ export default function Guide() {
       <TitleDiv>
         <Title>Matchbox Energy User Guide</Title>
       </TitleDiv>
-
+      <P>
+        If you need more guidance, consult <Bold>Glossary</Bold>{" "}
+        <Navitem exact to="/glossary">
+          Here
+        </Navitem>{" "}
+        , or under the <Bold>Help</Bold> tab at the top of the page.
+      </P>
       <Iframe
         width="450"
         height="315"
@@ -41,13 +47,6 @@ export default function Guide() {
         <Li>External Envelope</Li>
         <Li>Building Specifications</Li>
       </Ul>
-      <P>
-        If you need more guidance, consult <Bold>Glossary</Bold>{" "}
-        <Navitem exact to="/glossary">
-          Here
-        </Navitem>{" "}
-        , or under the <Bold>Help</Bold> tab at the top of the page.
-      </P>
       <P>
         To begin, select the <Bold>File</Bold> heading.
       </P>
@@ -111,6 +110,13 @@ export default function Guide() {
         To save your project, go to the <Bold>File</Bold> heading and select{" "}
         <Bold>Save to Web</Bold>.
       </P>
+      <P>
+        If you need more guidance, consult <Bold>Glossary</Bold>{" "}
+        <Navitem exact to="/glossary">
+          Here
+        </Navitem>{" "}
+        , or under the <Bold>Help</Bold> tab at the top of the page.
+      </P>
     </Wrapper>
   );
 }
@@ -164,8 +170,10 @@ const Bold = styled.span`
 const Ul = styled.ul``;
 const Li = styled.li``;
 const Navitem = styled(NavLink)`
-  background: rgb(192, 252, 252);
+  background: rgb(166, 255, 163);
   color: black;
-  padding: 0px 5px 2px 5px;
+  font-weight: bold;
+  padding: 1px 7px 3px 7px;
   border-radius: 5px;
+  border: 1px solid black;
 `;
