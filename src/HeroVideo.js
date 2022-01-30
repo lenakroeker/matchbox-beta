@@ -9,10 +9,7 @@ export default function HeroVideo() {
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <ReactPlayer
-          url="https://matchbox-vid.s3.us-east-2.amazonaws.com/matchbox-demo+(1).mp4"
-          controls="true"
-        />
+        <ReactPlayer url="https://streamable.com/m5yflo" controls="true" />
 
         {/* <Video
           width="560"
