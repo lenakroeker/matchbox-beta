@@ -4,13 +4,15 @@ import Green from "./assets/newgreen.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 import ReactPlayer from "react-player";
 
-import Vid from "./assets/matchbox-demo.mp4";
 export default function HeroVideo() {
   return (
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <ReactPlayer url={Vid} controls="true" />
+        <ReactPlayer
+          url="https://matchbox-vid.s3.us-east-2.amazonaws.com/matchbox-demo+(1).mp4"
+          controls="true"
+        />
 
         {/* <Video
           width="560"
