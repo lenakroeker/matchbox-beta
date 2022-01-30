@@ -56,11 +56,7 @@ export const Header = () => {
           </Navitem>
 
           <Navitem exact to="/pricing">
-            Pricing
-          </Navitem>
-
-          <Navitem exact to="/signup">
-            Sign Up
+            Free Trial
           </Navitem>
 
           <Navitem exact to="/user-guide">
@@ -81,11 +77,7 @@ export const Header = () => {
                 About Us
               </MobileNavitem>
               <MobileNavitem exact to="/pricing">
-                Pricing
-              </MobileNavitem>
-
-              <MobileNavitem exact to="/sign-up">
-                Sign Up
+                Free Trial
               </MobileNavitem>
 
               <MobileNavitem exact to="/user-guide">
@@ -262,11 +254,13 @@ const Login = styled(NavLink)`
   line-height: 2em;
   border-radius: 5px;
   cursor: pointer;
-  transition: 1s ease;
+  transition: 0.7s ease;
   margin: 5px 10px 4px 10px;
   text-decoration: none;
   &:hover {
     color: #8efb2c;
+    padding: 0px 20px 0px 20px;
+    margin-left: 0px;
   }
 `;
 

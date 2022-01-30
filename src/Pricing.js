@@ -5,15 +5,20 @@ import { NavLink, useNavigate } from "react-router-dom";
 export default function Pricing() {
   return (
     <Wrapper>
-      <PageTitle>Pricing</PageTitle>
+      <Free>
+        <Trial exact to="/signup">
+          Sign up for 1-Month Free Trial
+        </Trial>
+      </Free>
+      <PageTitle>Our Plans</PageTitle>
       <Prices>
         <PriceCard>
           <Title>Basic</Title>
           <Price>$300</Price>
           <Per>/Year</Per>
-          <Info>1 account</Info>
-          <Info>info</Info>
-          <Info>info</Info>
+          <Info>1 User</Info>
+          <Info>Unlimited Projects</Info>
+          <Info>1-month free trial</Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>
@@ -22,9 +27,9 @@ export default function Pricing() {
           <Title>Premium</Title>
           <Price>$500</Price>
           <Per>/Year</Per>
-          <Info>2-10 accounts</Info>
-          <Info>info</Info>
-          <Info>info</Info>
+          <Info>2-10 Users</Info>
+          <Info>Unlimited Projects</Info>
+          <Info>1-month free trial</Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>
@@ -33,9 +38,9 @@ export default function Pricing() {
           <Title>Business</Title>
           <Price>$2000</Price>
           <Per>/Year</Per>
-          <Info>10-100 accounts</Info>
-          <Info>info</Info>
-          <Info>info</Info>
+          <Info>10-100 Users</Info>
+          <Info>Unlimited Projects</Info>
+          <Info>1-month free trial</Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>
@@ -45,8 +50,7 @@ export default function Pricing() {
           <Price>$200</Price>
           <Per>/Term</Per>
           <Info>Includes students of one class + instructor</Info>
-          <Info>info</Info>
-          <Info>info</Info>
+          <Info>Unlimited Projects</Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>
@@ -85,13 +89,14 @@ const PriceCard = styled.div`
   margin: 10px 1vw;
   width: 25%;
   text-align: center;
+  position: relative;
+  display: box;
   padding: 10px;
   border-radius: 10px;
   transition: 0.8s ease-in-out;
   &:hover {
     background: rgb(237, 244, 245, 0.5);
-    height: 360px;
-    width: 26%;
+    padding: 14px;
     margin: -1px 0.7vw 11px 0.7vw;
   }
   @media (max-width: 768px) {
@@ -124,6 +129,26 @@ const Info = styled.div`
   border-bottom: 1px solid black;
 `;
 
+const Free = styled.div`
+  margin: 15vw auto 10vw auto;
+`;
+
+const Trial = styled(NavLink)`
+  background: black;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 0px 15px -3px #54ff0d;
+  box-shadow: 0px 0px 15px -3px #54ff0d;
+  transition: 0.4s ease-out;
+  &:hover {
+    padding: 12px 25px;
+    color: #aefc8d;
+  }
+`;
+
 const Signup = styled(NavLink)`
   background: black;
   color: white;
@@ -131,7 +156,7 @@ const Signup = styled(NavLink)`
   padding: 10px 20px;
   border-radius: 7px;
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   text-decoration: none;
   @media (max-width: 768px) {
     position: relative;

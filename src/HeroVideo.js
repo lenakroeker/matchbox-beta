@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Green from "./assets/newgreen.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
+import ReactPlayer from "react-player";
 
 import Vid from "./assets/matchbox-demo.mp4";
 export default function HeroVideo() {
@@ -9,7 +10,9 @@ export default function HeroVideo() {
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <Video
+        <ReactPlayer url={Vid} controls="true" />
+
+        {/* <Video
           width="560"
           height="315"
           src="https://www.youtube.com/embed/uBBkPDIavjI"
@@ -26,7 +29,7 @@ export default function HeroVideo() {
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
-        ></VideoMobile>
+        ></VideoMobile> */}
       </ScrollAnimation>
     </Div>
   );
@@ -35,6 +38,7 @@ export default function HeroVideo() {
 const Div = styled.div`
   margin: 0 auto;
   text-align: center;
+  width: 50vw;
   @media (max-width: 500px) {
     margin: 40px auto;
   }
