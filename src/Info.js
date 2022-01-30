@@ -15,7 +15,7 @@ export default function Info() {
             <Img src={One} />
             <Title>Accurate</Title>
             <InfoText>
-              Has been accurate within 1% or less of target predicted energy
+              Has been accurate within 10% or less of target predicted energy
               use*
             </InfoText>
             <SubText>*In all monitored tests</SubText>
@@ -31,7 +31,6 @@ export default function Info() {
           <Box3>
             <Img src={Three} />
             <Title>Efficient</Title>
-
             <InfoText>
               Efficiently integrates into exisiting workflows, can be used by
               anyone along side their chosen design suite.

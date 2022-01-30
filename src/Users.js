@@ -54,4 +54,8 @@ const User = styled.div`
   font-size: 20px;
   margin: 10px 20px;
   font-family: "Red Hat Display", sans-serif;
+  transition: 1s ease-in-out;
+  &:hover {
+    text-shadow: 0px 0px 10px rgba(50, 152, 179, 0.39);
+  }
 `;

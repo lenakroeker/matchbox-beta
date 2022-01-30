@@ -11,8 +11,9 @@ export default function Hero() {
           Developed to enable the delivery of net-zero and regenerative
           buildings, MATCHBOX allows designers to visualize and track the energy
           effects of their decisions from the initial stages of design to
-          completion. MATCHBOX is useful, Elemental Technology in Compact Form.{" "}
+          completion.
         </P>
+        <P>MATCHBOX is useful, Elemental Technology in Compact Form. </P>
       </HeroText>
       <ImgDiv>
         <Img src={HeroImg} />
