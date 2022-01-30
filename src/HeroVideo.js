@@ -9,7 +9,7 @@ export default function HeroVideo() {
     <Div>
       <ScrollAnimation animateIn="fadeIn">
         <Img src={Green} />
-        <ReactPlayer url="https://streamable.com/m5yflo" controls="true" />
+        <ReactPlayer url="https://streamable.com/2vgiye" controls="true" />
 
         {/* <Video
           width="560"
