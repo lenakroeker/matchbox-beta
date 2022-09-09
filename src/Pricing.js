@@ -29,7 +29,6 @@ export default function Pricing() {
           <Per>/Year</Per>
           <Info>2-10 Users</Info>
           <Info>Unlimited Projects</Info>
-          <Info></Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>
@@ -40,7 +39,6 @@ export default function Pricing() {
           <Per>/Year</Per>
           <Info>10-100 Users</Info>
           <Info>Unlimited Projects</Info>
-          <Info></Info>
           <Signup exact to="/signup">
             Sign up
           </Signup>

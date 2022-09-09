@@ -41,7 +41,7 @@ export default function Info() {
           <Img src={Four} />
           <Title>In-Depth</Title>
           <InfoText>
-            Calculates energy consumtion using data across 4 key areas:
+            Calculates energy consumption using data across 4 key areas:
             <Ul>
               <Li>Climate + Enviroment</Li>
               <Li>Internal Operations</Li>

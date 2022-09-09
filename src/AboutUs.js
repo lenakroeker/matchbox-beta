@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import Rich from "./assets/rich.jpg";
+import Rich from "./assets/rich2.jpg";
 import Jake from "./assets/Jake.jpg";
 import Trevor from "./assets/trevor.png";
 import { BsLinkedin } from "react-icons/bs";
@@ -100,14 +100,14 @@ export default function AboutUs() {
             <BsLinkedin size={20} />
           </Linkedin>
           <ProfileText>
-            I am a computer science major who graduated from Dalhousie
-            University. During my studies I had a special focus on computational
-            neuroscience and machine learning, which I studied under Dr.
-            Trappenberg in the Dalhousie Computer Science department. My
-            interest in neuroscience research has lead me to work in Dr. Eske's
-            lab, where I work on programs for the Cognitive Repair Kit, as well
-            as create and update any programs which require network connections.
-            I also assist in research projects wherever possible.
+            Jacob is a computer science major whose studies focus on
+            computational neuroscience and machine learning. His interest in
+            neuroscience research has led him to work in the Brain Repair Centre
+            of the Life Sciences Research Institute at Dalhousie University,
+            where he works on programs for the Cognitive Repair Kit, computer –
+            user interface as well as creating and updating programs which
+            require network connections. He is also a part of the team in other
+            on-going research projects.
           </ProfileText>
         </ProfileCard>
       </ProfileDiv>

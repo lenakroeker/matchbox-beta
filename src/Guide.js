@@ -13,7 +13,7 @@ export default function Guide() {
         <Navitem exact to="/glossary">
           Here
         </Navitem>{" "}
-        , or under the <Bold>Help</Bold> tab at the top of the page.
+        , or under the <Bold>Help</Bold> tab at the top of the app page.
       </P>
       <Iframe
         width="450"
@@ -115,7 +115,7 @@ export default function Guide() {
         <Navitem exact to="/glossary">
           Here
         </Navitem>{" "}
-        , or under the <Bold>Help</Bold> tab at the top of the page.
+        , or under the <Bold>Help</Bold> tab at the top of the app page.
       </P>
     </Wrapper>
   );
