@@ -63,9 +63,7 @@ export const Header = () => {
             User Guide
           </Navitem>
 
-          <Login exact to="/signup">
-            Log in
-          </Login>
+          <Login href="">Log in</Login>
         </Navlist>
         <MobileNav>
           <NavIcon onClick={() => dropHandle()}>
@@ -84,9 +82,7 @@ export const Header = () => {
                 User Guide
               </MobileNavitem>
 
-              <MobileNavitemLogin exact to="/sign-up">
-                Log In
-              </MobileNavitemLogin>
+              <MobileNavitemLogin href="">Log In</MobileNavitemLogin>
 
               <GrClose size={30} />
             </MobileNavlist>
@@ -214,12 +210,13 @@ const MobileNavitem = styled(NavLink)`
   color: white;
   text-decoration: none;
   margin: 20px 0;
+  text-align: center;
   background: rgb(29, 29, 31);
   border-radius: 5px;
   animation: 0.7s ${drop} ease-in-out;
 `;
 
-const MobileNavitemLogin = styled(NavLink)`
+const MobileNavitemLogin = styled.a`
   width: 100%;
   transition: 1s ease;
   height: 60px;
@@ -234,7 +231,7 @@ const MobileNavitemLogin = styled(NavLink)`
 `;
 
 const Navitem = styled(NavLink)`
-  width: 140px;
+  padding: 0 50px;
   transition: 1s ease;
   text-decoration: none;
   color: black;
@@ -244,7 +241,7 @@ const Navitem = styled(NavLink)`
   }
 `;
 
-const Login = styled(NavLink)`
+const Login = styled.a`
   background-color: black;
   color: white;
   width: 70px;

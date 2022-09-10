@@ -6,9 +6,7 @@ export default function Pricing() {
   return (
     <Wrapper>
       <Free>
-        <Trial exact to="/signup">
-          Sign up for 1-Month Free Trial
-        </Trial>
+        <Trial href="">Sign up for 1-Month Free Trial</Trial>
       </Free>
       <PageTitle>Our Plans</PageTitle>
       <Prices>
@@ -19,9 +17,7 @@ export default function Pricing() {
           <Info>1 User</Info>
           <Info>Unlimited Projects</Info>
           <Info>1-month free trial</Info>
-          <Signup exact to="/signup">
-            Sign up
-          </Signup>
+          <Signup href="">Sign up</Signup>
         </PriceCard>
         <PriceCard>
           <Title>Premium</Title>
@@ -29,9 +25,7 @@ export default function Pricing() {
           <Per>/Year</Per>
           <Info>2-10 Users</Info>
           <Info>Unlimited Projects</Info>
-          <Signup exact to="/signup">
-            Sign up
-          </Signup>
+          <Signup href="">Sign up</Signup>
         </PriceCard>
         <PriceCard>
           <Title>Business</Title>
@@ -39,9 +33,7 @@ export default function Pricing() {
           <Per>/Year</Per>
           <Info>10-100 Users</Info>
           <Info>Unlimited Projects</Info>
-          <Signup exact to="/signup">
-            Sign up
-          </Signup>
+          <Signup href="">Sign up</Signup>
         </PriceCard>
         <PriceCard>
           <Title>Educational</Title>
@@ -49,9 +41,7 @@ export default function Pricing() {
           <Per>/Term</Per>
           <Info>Includes students of one class + instructor</Info>
           <Info>Unlimited Projects</Info>
-          <Signup exact to="/signup">
-            Sign up
-          </Signup>
+          <Signup href="">Sign up</Signup>
         </PriceCard>
       </Prices>
     </Wrapper>
@@ -131,7 +121,7 @@ const Free = styled.div`
   margin: 15vw auto 10vw auto;
 `;
 
-const Trial = styled(NavLink)`
+const Trial = styled.a`
   background: black;
   color: white;
   cursor: pointer;
@@ -147,7 +137,7 @@ const Trial = styled(NavLink)`
   }
 `;
 
-const Signup = styled(NavLink)`
+const Signup = styled.a`
   background: black;
   color: white;
   cursor: pointer;

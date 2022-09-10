@@ -182,7 +182,7 @@ const BackImg = styled.img`
   top: 0;
   margin-left: 13%;
   opacity: 0.5;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     top: 36vw;
     margin-left: 0%;
   }
@@ -238,7 +238,7 @@ const Slider = styled.div`
 
   background: rgb(237, 244, 245);
   overflow-x: hidden;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     width: 100vw;
     margin-left: 0;
     height: auto;
@@ -255,7 +255,7 @@ const SliderContent = styled.ul`
   &:hover {
     animation-play-state: paused;
   }
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     animation: ${slidemobile} 15s ease-in-out infinite;
   }
 `;
@@ -266,7 +266,7 @@ const Quote = styled.div`
   display: flex;
   margin: 0px 20px 0px 20px;
   font-size: 18px;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     display:block;
     width: 90vw;
     margin: 20px 5vw 0px 5vw;
@@ -283,7 +283,7 @@ const QuoteText = styled.div`
   align-content: center;
   flex-direction: column;
   /* Column | row */
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     text-align: left;
     width: 100%;
     display: block;
@@ -308,7 +308,7 @@ const Inst = styled.div``;
 
 const QuoteProfile = styled.div`
   margin: 0 3vw;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     display: flex;
   }
 `;
@@ -319,7 +319,7 @@ const QuoteImgDiv = styled.div`
   height: 7vw;
   margin-bottom: 10px;
   margin-top: 20px;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     width: 40%;
     height: 40%;
     margin-top: 5px;

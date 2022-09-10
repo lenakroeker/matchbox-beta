@@ -66,9 +66,9 @@ const Box1 = styled.div`
 `;
 
 const Img = styled.img`
-  width: 80%;
+  width: 15vw;
   height: auto;
-  margin: 0px 30%;
+  margin: 0px 10%;
   @media (max-width: 1000px) {
     width: 40%;
     height: auto;

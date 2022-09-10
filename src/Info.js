@@ -63,7 +63,7 @@ const Flex = styled.div`
   padding: 20px;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     display: block;
     margin: 0px 3vw 50px 3vw;
   }
@@ -76,10 +76,11 @@ const Box1 = styled.div`
   box-shadow: 30px 30px 40px 40px rgb(99, 124, 138, 0.1);
   margin: 20px;
   margin-top: 100px;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     width: 96%;
     margin: 0px 3vw 10px 3vw;
-    height: 270px;
+    height: auto;
+    padding-bottom: 10px;
   }
 `;
 
@@ -91,10 +92,11 @@ const Box2 = styled.div`
   box-shadow: 3px 3px 30px 30px rgb(99, 124, 138, 0.1);
   z-index: 10;
   position: relative;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     width: 96%;
     margin: 40px 3vw 10px 3vw;
-    height: 250px;
+    height: auto;
+    padding-bottom: 10px;
   }
 `;
 
@@ -106,10 +108,11 @@ const Box3 = styled.div`
   border-radius: 20px;
   box-shadow: 3px 3px 30px 30px rgb(99, 124, 138, 0.1);
   z-index: 0;
-  @media (max-width: 500px) {
+  @media (max-width: 800px) {
     width: 96%;
     margin: 40px 3vw 10px 3vw;
-    height: 250px;
+    height: auto;
+    padding-bottom: 10px;
   }
 `;
 
@@ -118,14 +121,16 @@ const Box4 = styled.div`
   text-align: center;
   margin: 20px auto;
   margin-top: -220px;
-  height: 23vw;
+  height: auto;
   border-radius: 20px;
   box-shadow: 3px 3px 30px 30px rgb(99, 124, 138, 0.1);
   z-index: 0;
-  @media (max-width: 500px) {
+  padding-bottom: 1px;
+
+  @media (max-width: 800px) {
     width: 78%;
     margin: -50px 7vw 10px 12vw;
-    height: 300px;
+    height: auto;
   }
 `;
 

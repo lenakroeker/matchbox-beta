@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   height: 480px;
   display: flex;
   width: 100%;
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     display: block;
     height: auto;
   }
@@ -37,10 +37,11 @@ const Wrapper = styled.div`
 const HeroText = styled.div`
   width: 40%;
   margin: 50px 5px 50px 10vw;
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     width: 80vw;
     margin: 100px 10vw 50px 10vw;
     z-index: 5;
+    line-height: 3.3em;
     text-align: center;
   }
 `;
@@ -48,7 +49,7 @@ const HeroText = styled.div`
 const ImgDiv = styled.div`
   width: 60%;
   height: 400px;
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     width: 100%;
     opacity: 0.3;
     margin-top: -450px;
@@ -66,9 +67,8 @@ const Title2 = styled.h1`
   color: black;
   margin-left: 10px;
   font-size: 3vw;
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     margin-top: 0px;
-
     width: 80vw;
     margin: auto;
     font-size: 10vw;
@@ -78,4 +78,5 @@ const Title2 = styled.h1`
 const P = styled.p`
   font-size: 18px;
   font-weight: light;
+  line-height: 1.4em;
 `;
