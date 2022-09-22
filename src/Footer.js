@@ -59,7 +59,7 @@ const Box1 = styled.div`
   margin: 50px 60px 140px 10vw;
   @media (max-width: 1000px) {
     margin: 0;
-
+    margin-bottom: -50px;
     height: 30vw;
     width: 100%;
   }
@@ -69,10 +69,11 @@ const Img = styled.img`
   width: 15vw;
   height: auto;
   margin: 0px 10%;
+  max-width: 200px;
   @media (max-width: 1000px) {
-    width: 40%;
+    width: 200px;
     height: auto;
-    margin: 30px 30%;
+    margin: 30px calc(50% - 100px) 0 calc(50% - 100px);
   }
 `;
 
