@@ -173,7 +173,7 @@ const MobileNav = styled.div`
 const NavIcon = styled.div`
   cursor: pointer;
   position: fixed;
-  right: 20px;
+  left: 78vw;
   top: 12px;
 `;
 

@@ -634,6 +634,7 @@ const Table = styled.table`
     width: 60%;
     margin-left: -8vw;
     margin-top: 30px;
+    font-size: 18px;
   }
 `;
 const Th = styled.th`

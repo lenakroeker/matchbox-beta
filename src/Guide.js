@@ -125,7 +125,7 @@ const Wrapper = styled.div`
   margin: 120px 14vw 140px 14vw;
   min-height: 100vh;
   @media (max-width: 500px) {
-    font-size: 22px;
+    font-size: 18px;
     margin: 120px 8vw 140px 8vw;
   }
 `;
@@ -155,13 +155,16 @@ const Title = styled.div`
   font-weight: bold;
   color: rgb(110, 175, 186);
   @media (max-width: 500px) {
-    margin: 40px 2vw;
+    margin: 40px 2vw 0 2vw;
   }
 `;
 
 const H2 = styled.div``;
 const P = styled.div`
   margin: 30px 0;
+  @media (max-width: 500px) {
+    margin-top: 15px;
+  }
 `;
 const Bold = styled.span`
   font-weight: bold;

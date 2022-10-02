@@ -75,6 +75,11 @@ const Img = styled.img`
     height: auto;
     margin: 30px calc(50% - 100px) 0 calc(50% - 100px);
   }
+  @media (max-width: 650px) {
+    width: 100px;
+    height: auto;
+    margin: 30px calc(50% - 50px) 0 calc(50% - 50px);
+  }
 `;
 
 const Box2 = styled.div`

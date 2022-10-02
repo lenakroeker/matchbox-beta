@@ -31,7 +31,7 @@ const Wrapper = styled.div`
   text-align: center;
   @media (max-width: 500px) {
     margin: 30px 0 0 0;
-    width: 100%;
+    width: 80%;
   }
 `;
 

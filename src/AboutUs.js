@@ -122,7 +122,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 1000px) {
     margin-top: 100px;
-    font-size: 24px;
+    font-size: 18px;
   }
 `;
 const Head = styled.div`
@@ -130,7 +130,6 @@ const Head = styled.div`
   margin: 0 13vw;
   @media (max-width: 500px) {
     margin: 0 5%;
-    line-height: 1.3em;
   }
 `;
 
@@ -145,6 +144,7 @@ const About = styled.div`
   margin: 0 7%;
   @media (max-width: 500px) {
     margin: 0 1%;
+    line-height: 1.2em;
   }
 `;
 
