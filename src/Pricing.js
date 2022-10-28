@@ -6,7 +6,9 @@ export default function Pricing() {
   return (
     <Wrapper>
       <Free>
-        <Trial href="">Sign up for 1-Month Free Trial</Trial>
+        <Trial href="https://matchboxenergy.com/signup?plan=trial">
+          Sign up for 1-Month Free Trial
+        </Trial>
       </Free>
       <PageTitle>Our Plans</PageTitle>
       <Prices>
@@ -17,15 +19,9 @@ export default function Pricing() {
           <Info>1 User</Info>
           <Info>Unlimited Projects</Info>
           <Info>1-month free trial</Info>
-          <Signup href="">Sign up</Signup>
-        </PriceCard>
-        <PriceCard>
-          <Title>Premium</Title>
-          <Price>$500</Price>
-          <Per>/Year</Per>
-          <Info>2-10 Users</Info>
-          <Info>Unlimited Projects</Info>
-          <Signup href="">Sign up</Signup>
+          <Signup href="https://matchboxenergy.com/signup?plan=Matchbox_individual">
+            Sign up
+          </Signup>
         </PriceCard>
         <PriceCard>
           <Title>Business</Title>
@@ -33,7 +29,9 @@ export default function Pricing() {
           <Per>/Year</Per>
           <Info>10-100 Users</Info>
           <Info>Unlimited Projects</Info>
-          <Signup href="">Sign up</Signup>
+          <Signup href="https://matchboxenergy.com/signup?plan=Matchbox_organization">
+            Sign up
+          </Signup>
         </PriceCard>
         <PriceCard>
           <Title>Educational</Title>
@@ -41,7 +39,9 @@ export default function Pricing() {
           <Per>/Term</Per>
           <Info>Includes students of one class + instructor</Info>
           <Info>Unlimited Projects</Info>
-          <Signup href="">Sign up</Signup>
+          <Signup href="https://matchboxenergy.com/signup?plan=Matchbox_educational">
+            Sign up
+          </Signup>
         </PriceCard>
       </Prices>
     </Wrapper>
@@ -66,6 +66,7 @@ const PageTitle = styled.div`
 
 const Prices = styled.div`
   display: flex;
+  justify-content: center;
   @media (max-width: 768px) {
     display: block;
   }
@@ -118,7 +119,7 @@ const Info = styled.div`
 `;
 
 const Free = styled.div`
-  margin: 15vw auto 10vw auto;
+  margin: 150px auto 50px auto;
 `;
 
 const Trial = styled.a`
@@ -130,7 +131,7 @@ const Trial = styled.a`
   text-decoration: none;
   -webkit-box-shadow: 0px 0px 15px -3px #54ff0d;
   box-shadow: 0px 0px 15px -3px #54ff0d;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-in-out;
   &:hover {
     padding: 12px 25px;
     color: #aefc8d;
@@ -146,8 +147,13 @@ const Signup = styled.a`
   position: absolute;
   bottom: 20px;
   text-decoration: none;
+  transition: 0.4s ease-in-out;
+
   @media (max-width: 768px) {
     position: relative;
     top: 30px;
+  }
+  &:hover {
+    color: #aefc8d;
   }
 `;

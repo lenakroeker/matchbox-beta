@@ -21,9 +21,9 @@ export default function Footer() {
             <Link exact to="/glossary">
               <Li>Glossary</Li>
             </Link>
-            <Link exact to="/signup">
+            <LinkE href="https://matchboxenergy.com/login">
               <Li>Log in</Li>
-            </Link>
+            </LinkE>
           </Ul>
         </Box3>
         <Box4>
@@ -31,7 +31,7 @@ export default function Footer() {
             <Link exact to="/pricing">
               <Li>Pricing</Li>
             </Link>
-            <Link exact to="/signup">
+            <Link exact to="/pricing">
               <Li>Sign Up</Li>
             </Link>
             <Link exact to="/contact">
@@ -40,18 +40,25 @@ export default function Footer() {
           </Ul>
         </Box4>
       </Box2>
-      <Box5></Box5>
+      <Copyright>
+        Website © 2022,{" "}
+        <A href="lenakroeker.dev" target="_blank">
+          Lena Kroeker
+        </A>
+      </Copyright>
     </Foot>
   );
 }
 
 const Foot = styled.div`
   background: black;
-  height: 250px;
+  height: 320px;
   display: flex;
   line-height: 2em;
+  position: relative;
   @media (max-width: 1000px) {
     display: block;
+    height: auto;
   }
 `;
 
@@ -103,7 +110,7 @@ const Box3 = styled.div`
   margin: 30px 10px;
   @media (max-width: 1000px) {
     width: 50%;
-    margin: 30px 0;
+    margin: 30px 0 100px 0;
   }
 `;
 
@@ -112,11 +119,17 @@ const Link = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
 `;
+
+const LinkE = styled.a`
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+`;
 const Box4 = styled.div`
   margin: 30px 10px;
   @media (max-width: 1000px) {
     width: 50%;
-    margin: 30px 0;
+    margin: 30px 0 100px 0;
   }
 `;
 const Box5 = styled.div`
@@ -136,5 +149,25 @@ const Li = styled.li`
     font-size: 20px;
     padding: 15px 0;
     text-align: center;
+  }
+`;
+
+const A = styled.a`
+  color: #c7fcf0;
+  &:hover {
+    color: #86fce1;
+  }
+`;
+
+const Copyright = styled.div`
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  color: #c7fcf0;
+  text-align: center;
+  font-size: 11px;
+  @media (max-width: 1000px) {
+    bottom: 20px;
+    font-size: 20px;
   }
 `;
